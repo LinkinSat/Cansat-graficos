@@ -1,0 +1,140 @@
+{
+    "actions": [
+    ],
+    "decoder": 0,
+    "frameDetection": 0,
+    "frameEnd": "\\n",
+    "frameParser": "/**\n * Splits a data frame into an array of elements using a comma separator.\n *\n * Use this function to break a string (like \"value1,value2,value3\") into\n * individual pieces, which can then be displayed or processed in your project.\n *\n * @param[in]  frame   A string containing the data frame.\n *                     Example: \"value1,value2,value3\"\n *\n * @return     An array of strings with the split elements.\n *             Example: [\"value1\", \"value2\", \"value3\"]\n *\n * @note You can declare global variables outside this function if needed\n *       for storing settings or keeping state between calls.\n */\nfunction parse(frame) {\n    return frame.split(',');\n}\n",
+    "frameStart": "$",
+    "groups": [
+        {
+            "datasets": [
+                {
+                    "alarm": 0,
+                    "fft": false,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "index": 1,
+                    "led": false,
+                    "ledHigh": 1,
+                    "log": false,
+                    "max": 0,
+                    "min": 0,
+                    "title": "Latitud",
+                    "units": "°",
+                    "value": "--.--",
+                    "widget": "lat"
+                },
+                {
+                    "alarm": 0,
+                    "fft": false,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "index": 2,
+                    "led": false,
+                    "ledHigh": 1,
+                    "log": false,
+                    "max": 0,
+                    "min": 0,
+                    "title": "Longitud",
+                    "units": "°",
+                    "value": "--.--",
+                    "widget": "lon"
+                },
+                {
+                    "alarm": 0,
+                    "fft": false,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "index": 3,
+                    "led": false,
+                    "ledHigh": 1,
+                    "log": false,
+                    "max": 0,
+                    "min": 0,
+                    "title": "Altitud",
+                    "units": "m",
+                    "value": "--.--",
+                    "widget": "alt"
+                }
+            ],
+            "title": "Mapa GPS",
+            "widget": "map"
+        },
+        {
+            "datasets": [
+                {
+                    "alarm": 0,
+                    "fft": false,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": true,
+                    "index": 5,
+                    "led": false,
+                    "ledHigh": 1,
+                    "log": false,
+                    "max": 5000,
+                    "min": 500,
+                    "title": "Presion",
+                    "units": "preassure",
+                    "value": "--.--",
+                    "widget": ""
+                }
+            ],
+            "title": "Gráfica Múltiple (2)",
+            "widget": "multiplot"
+        },
+        {
+            "datasets": [
+                {
+                    "alarm": 0,
+                    "fft": false,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": true,
+                    "index": 6,
+                    "led": false,
+                    "ledHigh": 1,
+                    "log": false,
+                    "max": 0,
+                    "min": 0,
+                    "title": "rads",
+                    "units": "",
+                    "value": "--.--",
+                    "widget": ""
+                }
+            ],
+            "title": "Gráfica Múltiple (3)",
+            "widget": "multiplot"
+        },
+        {
+            "datasets": [
+                {
+                    "alarm": 0,
+                    "fft": false,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "index": 4,
+                    "led": false,
+                    "ledHigh": 1,
+                    "log": false,
+                    "max": 100,
+                    "min": -50,
+                    "title": "Temperatura",
+                    "units": "Cº",
+                    "value": "--.--",
+                    "widget": "bar"
+                }
+            ],
+            "title": "Gráfica Múltiple",
+            "widget": "multiplot"
+        }
+    ],
+    "mapTilerApiKey": "",
+    "thunderforestApiKey": "",
+    "title": "mqtt-linkinsat"
+}
