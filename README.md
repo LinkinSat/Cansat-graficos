@@ -1,1 +1,3 @@
-# Este archivo contiene una exportación de la configuración de Serial Studio utilizando los parámetros mostrados en la consola Serie de la placa receptora
+# Este repositorio contiene los archivos para configurar el software de gráficos
+* config.json -> Serial Studio
+* dashboard(grafana).json -> Grafana
